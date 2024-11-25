@@ -27,3 +27,7 @@ ENTRYPOINT [""]
 #--- where we write the argument of the command that written in enterypoint ---- 
 
 CMD [""]
+
+
+#--- After filling this template: open a new teriminal in the same directory where the docker file exist----------
+$ docker image build -t [image_name]
