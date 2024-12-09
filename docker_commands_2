@@ -1,0 +1,63 @@
+____________Docker comman command_ 10_12_2024_V1_______
+
+[ Shaker Sami ] [Big Data Engineer] [shaker.samiy@gmail.com] [+201068448613 - +201117518670]
+#=========================================================================================
+#Check the version of the docker running on your system
+>docker --version
+
+# you also can use to get more details 
+>docker -v
+
+#To list the running only containers in your system
+>docker container ls
+
+#To list the running and stoped containers in your system
+>docker ps -a
+*note: ps means process status 
+
+# to run image that already downloadd in your system
+>docker run [image_name]
+
+# Stop running images:
+1-first get the name or the id of the container
+>docker ps -a
+2-use the command
+>docker container stop [container_ID]     #using container id
+>docker container stop [container_name]   #using container name
+
+# Stop multiple container at the same time 
+>docker container stop [container_ID] [container_ID] [container_ID] [container_ID] 
+
+#Remove a container
+first you need to stop it, then
+>docker rm [container_ID]           #using container id
+>docker rm [container_name]         #using container name
+
+#Remove a multiple containers once
+first you need to stop it, then
+>docker rm [container_ID] [container_ID] [container_ID] [container_ID]
+
+#list all images
+>docker image ls
+
+#To delete or remove  an image
+>docker rmi [image_ID]
+*note you do not need to write the complte image_Id, enught to write the first 3part of the name
+
+
+# pull images into your system without running it(just store it in local system)
+>docker pull [offical_image_name]
+
+#open a terminal inside the container to run commands
+>docker run -it [countainer_name] bash    #using container name
+
+>docker run -it [countainer_ID] bash      #using container id
+
+# to attach to a specific container to run a command in its terminal
+>docker attach [docker_id]
+
+
+
+
+
+
